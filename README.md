@@ -2,6 +2,14 @@
 Hi I’m a Full Stack Developer with experience in modern web technologies like React, Next.js, Node.js, TypeScript, and more. I love building scalable, clean, and user-friendly applications—and this project showcases my skills in working with headless CMS and frontend architecture
 
 
+---
+
+## 🌐 Live Deployment Link
+
+🔗 [EcoNova Landing Page  (Deployed on Vercel)](https://eco-nova-assignment.vercel.app/)
+
+---
+
 ## 🌟 Features
 
 - **Dynamic Content Management**: All content managed through Contentful CMS

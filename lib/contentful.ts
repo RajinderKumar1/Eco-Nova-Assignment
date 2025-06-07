@@ -9,28 +9,28 @@ export const apolloClient = new ApolloClient({
     uri: CONTENTFUL_GRAPHQL_ENDPOINT,
     cache: new InMemoryCache(),
     headers: {
-        Authorization: `Bearer ${process.env.CONTENTFUL_ACCESS_TOKEN}`,
+        Authorization: `Bearer ${process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN}`,
     },
 });
+
 
 // REST Client for fallback
 export const contentfulClient = createClient({
     space: process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID!,
-    accessToken: process.env.CONTENTFUL_ACCESS_TOKEN!,
+    accessToken:process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN! ,
     environment: process.env.CONTENTFUL_ENVIRONMENT || "master",
 });
 
 // Preview client
 export const previewClient = createClient({
     space: process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID!,
-    accessToken: process.env.CONTENTFUL_PREVIEW_ACCESS_TOKEN!,
-    environment: process.env.CONTENTFUL_ENVIRONMENT || "master",
+    accessToken: process.env.NEXT_PUBLIC_CONTENTFUL_PREVIEW_ACCESS_TOKEN!,
+    environment: process.env.NEXT_PUBLIC_CONTENTFUL_ENVIRONMENT || "master",
     host: "preview.contentful.com",
 });
 
 
-export const GET_LANDING_PAGE = gql`
-  query GetLandingPage($locale: String!, $preview: Boolean = false) {
+export const GET_LANDING_PAGE = gql` query GetLandingPage($locale: String!, $preview: Boolean = false) {
     landingPageCollection(limit: 1, locale: $locale, preview: $preview) {
       items {
         title
