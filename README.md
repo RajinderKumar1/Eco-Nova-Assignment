@@ -8,6 +8,14 @@ Hi I’m a Full Stack Developer with experience in modern web technologies like 
 
 🔗 [EcoNova Landing Page  (Deployed on Vercel)](https://eco-nova-assignment.vercel.app/)
 
+
+## Video Link
+
+🔗 [EcoNova Landing Page  Setup Video ](https://www.loom.com/share/6d90bb60db924d9c95675f54f093db0b?sid=ae5a4cb9-bd26-4c20-acfe-5b5362c80ea5)
+
+
+
+
 ---
 
 ## 🌟 Features
